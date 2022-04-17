@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import Auth from '../../utils/auth';
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
           {Auth.loggedIn() ? (
             <>
               <Link to="/profile">Me</Link>
-              <a href='/' onClick={logout}>
+              <a href="/" onClick={logout}>
                 Logout
               </a>
             </>
